@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  width: 100vw;
+  /*background-color: #0d7377;*/
+  background-color: #0d7377;
+  position: relative;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 70px;
+  /*background: rgba(255, 154, 118, 0.8);*/
+  background-color: rgba(50, 224, 196);
+  font-size: 2em;
+  grid-gap: 10px;
+  position: fixed;
+  width: 100vw;
+  font-family: "Permanent Marker", cursive;
+}
+
+.nav-list > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  /*color: #0d7377;*/
+  color: #0d7377;
+}
+
+.nav > .nav-list > .active-navLink {
+  color: #ac4b1c;
+}
+
+.main-content {
+  margin-top: 100px;
+  min-height: calc(100vh - 70px);
+  max-width: 100vw;
+  font-family: "Baloo Tammudu 2", cursive;
+  background-color: #0d7377;
+}
+
+.about-me {
+  display: none; /*flex*/
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  align-items: center;
+  line-height: 45px;
+  /*color: #32e0c4;*/
+  color: #32e0c4;
+  font-size: 1.5em;
+}
+
+.about-me > .about-me-cv {
+  text-decoration: none;
+  color: #32e0c4;
+  border: 2px solid #32e0c4;
+  background: #0d7377;
+  height: 50px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.about-me-cv > button {
+  border: none;
+  color: #32e0c4;
+  background: #0d7377;
+  outline: none;
+}
+
+.about-me-cv > #resume-button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+}
+
+.about-me-cv > #resume-button:active {
+  border: none;
+}
+
+/* projects */
+
+.projects {
+  background: #0d7377;
+  color: #32e0c4;
+  display: none; /*grid*/
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  max-width: inherit;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr repeat(3, 1fr);
+  width: 60%;
+  justify-self: center;
+  border: 5px solid #32e0c4;
+  border-radius: 10px;
+  height: 200px;
+  grid-gap: 5px;
+}
+.project-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-card > * {
+  text-align: center;
+  line-height: 20px;
+}
+
+.project-card > p {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.project-card-demo,
+.project-card-source {
+  color: #fafcc2;
+}
+
+/*contact-info */
+.contact-info {
+  height: calc(100vh - 70px);
+  background: #0d7377;
+  color: #32e0c4;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info > h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-links > a {
+  margin: 10px;
+  font-size: 3em;
+  color: #32e0c4;
+}
+
+@media screen and (min-width: 720px) and (max-width: 849px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card {
+    height: 300px;
+    width: 80%;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .about-me {
+    font-size: 2.5em;
+    line-height: 60px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+  }
+
+  .project-card {
+    height: 350px;
+    width: 90%;
+  }
+
+  .contact-info {
+    line-height: 20px;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 200px;
+  }
+
+  .contact-links > a {
+    margin-left: 30px;
+  }
+}
+
+/*@keyframes displayAnim {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: show;
+  }
+}
+
+@keyframes fadeOutAnim {
+  from {
+    visibility: show;
+  }
+  to {
+    visibility: hidden;
+  }
+}*/
