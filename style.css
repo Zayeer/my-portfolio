@@ -7,7 +7,7 @@
 #container {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #0d7377;
+  background-color: #ebebfa;
   max-width: 100vw;
   min-height: 100vh;
   position: relative;
@@ -18,7 +18,7 @@
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  background-color: rgba(50, 224, 196);
+  background-color: #6f6fdc;
   position: fixed;
   width: 100vw;
   font-family: "Permanent Marker", cursive;
@@ -40,12 +40,12 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #0d7377;
+  color: #c2c2f0;
   font-size: 2em;
 }
 
 .nav > .nav-list > .active-navLink {
-  color: #ac4b1c;
+  color: #ff4d88;
 }
 
 .main-content {
@@ -54,7 +54,7 @@
   margin-top: 30vh;
   min-height: 70vh;
   font-family: "Baloo Tammudu 2", cursive;
-  background-color: #0d7377;
+  background-color: #c2c2f0;
 }
 
 .about-me {
@@ -64,7 +64,7 @@
   justify-content: center;
   align-items: center;
   max-height: 70vh;
-  color: #32e0c4;
+  color: #6f6fdc;
   line-height: 50px;
   font-size: 4vh;
 }
@@ -78,9 +78,8 @@
 }
 .about-me > .about-me-cv {
   text-decoration: none;
-  color: #32e0c4;
-  border: 2px solid #32e0c4;
-  background: #0d7377;
+  color: #6f6fdc;
+  border: 2px solid #6f6fdc;
   display: flex;
   border-radius: 5px;
   padding: 10px;
@@ -88,13 +87,13 @@
 
 .about-me-cv > button {
   border: none;
-  color: #32e0c4;
-  background: #0d7377;
+  color: #6f6fdc;
   outline: none;
+  background-color:#c2c2f0;
 }
 
 .about-me-cv:hover {
-  border: 3px solid #32e0c4;
+  border: 3px solid #6f6fdc;
   padding: 9px;
 }
 
@@ -111,8 +110,8 @@
 /* projects */
 
 .projects {
-  background: #0d7377;
-  color: #32e0c4;
+  background: #c2c2f0;
+  color: #6f6fdc;
   min-height: inherit;
   margin-top: 5vh;
   display: none; /*grid*/
@@ -126,7 +125,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr repeat(3, 1fr);
-  border: 5px solid #32e0c4;
+  border: 5px solid #6f6fdc;
   border-radius: 10px;
   height: 20em;
 }
@@ -148,13 +147,13 @@
 
 .project-card-demo,
 .project-card-source {
-  color: #fafcc2;
+  color: #ff0055;
 }
 
 /*contact-info */
 .contact-info {
-  background: #0d7377;
-  color: #32e0c4;
+  background: #c2c2f0;
+  color: #6f6fdc;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +172,7 @@
 }
 
 .contact-links > a {
-  color: #32e0c4;
+  color: #6f6fdc;
 }
 
 @media screen and (min-width: 568px) and (max-width: 811px) {
